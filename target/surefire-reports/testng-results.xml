@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MAVEN - CUCUMBER - TESTNG" duration-ms="65764" started-at="2019-01-24T07:37:18Z" finished-at="2019-01-24T07:38:24Z">
+    <groups>
+      <group name="TAG">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@234bef66]" name="feature" class="runner.TestRunner"/>
+      </group> <!-- TAG -->
+    </groups>
+    <test name="Cucumber Execution Result" duration-ms="65764" started-at="2019-01-24T07:37:18Z" finished-at="2019-01-24T07:38:24Z">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@234bef66]" name="setUpClass" is-config="true" duration-ms="310" started-at="2019-01-24T13:07:18Z" finished-at="2019-01-24T13:07:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@234bef66]" name="feature" duration-ms="65320" started-at="2019-01-24T13:07:19Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-01-24T13:08:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Feature to test Bank's functionality]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@234bef66]" name="tearDownClass" is-config="true" duration-ms="20" started-at="2019-01-24T13:08:24Z" finished-at="2019-01-24T13:08:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Cucumber Execution Result -->
+  </suite> <!-- MAVEN - CUCUMBER - TESTNG -->
+</testng-results>

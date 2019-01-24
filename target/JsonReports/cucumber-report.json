@@ -1,0 +1,308 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 285725,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankStepDefinition.before(Scenario)"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "To create customer 1",
+        "description": "",
+        "id": "feature-to-test-bank\u0027s-functionality;to-create-customer-\u003cid\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2124456261,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankStepDefinition.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 811229324,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I read data from excel 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 23
+                }
+              ],
+              "location": "BankStepDefinition.read_data_from_excel(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10597756976,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "url is loaded",
+            "match": {
+              "location": "BankStepDefinition.url_is_loaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4291751577,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I login",
+            "match": {
+              "location": "BankStepDefinition.i_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53254885,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I should see on home page",
+            "match": {
+              "location": "BankStepDefinition.i_should_see_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Customer details : abc, abc@abc.com"
+            ],
+            "result": {
+              "duration": 16671894423,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I create new customer",
+            "match": {
+              "location": "BankStepDefinition.i_create_new_customer()"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Customer Id : 123456"
+            ],
+            "result": {
+              "duration": 3897109,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should get customerId",
+            "match": {
+              "location": "BankStepDefinition.i_should_get_customerID()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3583012576,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I logout",
+            "match": {
+              "location": "BankStepDefinition.i_logout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@smoke"
+          },
+          {
+            "line": 22,
+            "name": "@customer"
+          },
+          {
+            "line": 1,
+            "name": "@bank"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 44336,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankStepDefinition.before(Scenario)"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "To create customer 2",
+        "description": "",
+        "id": "feature-to-test-bank\u0027s-functionality;to-create-customer-\u003cid\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1923635458,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BankStepDefinition.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 55184350,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I read data from excel 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 23
+                }
+              ],
+              "location": "BankStepDefinition.read_data_from_excel(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12385447233,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "url is loaded",
+            "match": {
+              "location": "BankStepDefinition.url_is_loaded()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3593762572,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I login",
+            "match": {
+              "location": "BankStepDefinition.i_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64774204,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I should see on home page",
+            "match": {
+              "location": "BankStepDefinition.i_should_see_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Customer details : bcd, abc@abc.com"
+            ],
+            "result": {
+              "duration": 5703181319,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I create new customer",
+            "match": {
+              "location": "BankStepDefinition.i_create_new_customer()"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Customer Id : 123456"
+            ],
+            "result": {
+              "duration": 329651,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should get customerId",
+            "match": {
+              "location": "BankStepDefinition.i_should_get_customerID()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3262459830,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I logout",
+            "match": {
+              "location": "BankStepDefinition.i_logout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@smoke"
+          },
+          {
+            "line": 22,
+            "name": "@customer"
+          },
+          {
+            "line": 1,
+            "name": "@bank"
+          }
+        ]
+      }
+    ],
+    "name": "Feature to test Bank\u0027s functionality",
+    "description": "",
+    "id": "feature-to-test-bank\u0027s-functionality",
+    "keyword": "Feature",
+    "uri": "Bank.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@bank"
+      }
+    ]
+  }
+]
