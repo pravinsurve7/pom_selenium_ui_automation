@@ -96,7 +96,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 285725,
+  "duration": 195820,
   "status": "passed"
 });
 formatter.scenario({
@@ -169,55 +169,49 @@ formatter.match({
   "location": "BankStepDefinition.read_data_from_excel(String)"
 });
 formatter.result({
-  "duration": 811229324,
+  "duration": 934446621,
   "status": "passed"
 });
 formatter.match({
   "location": "BankStepDefinition.url_is_loaded()"
 });
 formatter.result({
-  "duration": 10597756976,
-  "status": "passed"
+  "duration": 8052063542,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom unknown error: cannot determine loading status\nfrom disconnected: unable to send message to renderer\n  (Session info: chrome\u003d71.0.3578.98)\n  (Driver info: chromedriver\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 3.09 seconds\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027IN-MU-LT-J27150\u0027, ip: \u002710.236.21.21\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir\u003dC:\\Users\\survep\\AppData\\Local\\Temp\\scoped_dir5552_28764}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d71.0.3578.98, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: 92a4ed6bdfadcba5d7e43436879b1f7c\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:306)\r\n\tat stepDefinition.BankStepDefinition.url_is_loaded(BankStepDefinition.java:47)\r\n\tat ✽.And url is loaded(Bank.feature:25)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "BankStepDefinition.i_login()"
 });
 formatter.result({
-  "duration": 4291751577,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "BankStepDefinition.i_should_see_on_home_page()"
 });
 formatter.result({
-  "duration": 53254885,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "BankStepDefinition.i_create_new_customer()"
 });
-formatter.write("Customer details : abc, abc@abc.com");
 formatter.result({
-  "duration": 16671894423,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "BankStepDefinition.i_should_get_customerID()"
 });
-formatter.write("Customer Id : 123456");
 formatter.result({
-  "duration": 3897109,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "BankStepDefinition.i_logout()"
 });
 formatter.result({
-  "duration": 3583012576,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 2124456261,
+  "duration": 1835140326,
   "status": "passed"
 });
 formatter.before({
@@ -294,55 +288,50 @@ formatter.match({
   "location": "BankStepDefinition.read_data_from_excel(String)"
 });
 formatter.result({
-  "duration": 55184350,
+  "duration": 103594224,
   "status": "passed"
 });
 formatter.match({
   "location": "BankStepDefinition.url_is_loaded()"
 });
 formatter.result({
-  "duration": 12385447233,
+  "duration": 7968718852,
   "status": "passed"
 });
 formatter.match({
   "location": "BankStepDefinition.i_login()"
 });
 formatter.result({
-  "duration": 3593762572,
-  "status": "passed"
+  "duration": 5087482778,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d71.0.3578.98)\n  (Driver info: chromedriver\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 7 milliseconds\nBuild info: version: \u00272.46.0\u0027, revision: \u002761506a4624b13675f24581e453592342b7485d71\u0027, time: \u00272015-06-04 10:22:50\u0027\nSystem info: host: \u0027IN-MU-LT-J27150\u0027, ip: \u002710.236.21.21\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, mobileEmulationEnabled\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir\u003dC:\\Users\\survep\\AppData\\Local\\Temp\\scoped_dir13096_1698}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, hasTouchScreen\u003dfalse, version\u003d71.0.3578.98, platform\u003dXP, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, locationContextEnabled\u003dtrue, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d}]\nSession ID: f5afad76acd8bba18ee46938b0efbe75\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027uid\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:358)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.toString(Unknown Source)\r\n\tat java.lang.String.valueOf(String.java:2994)\r\n\tat java.lang.StringBuilder.append(StringBuilder.java:131)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:293)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)\r\n\tat utils.WebDriverWrapper.waitForElementToVisible(WebDriverWrapper.java:20)\r\n\tat pages.LoginPage.login(LoginPage.java:48)\r\n\tat stepDefinition.BankStepDefinition.i_login(BankStepDefinition.java:60)\r\n\tat ✽.When I login(Bank.feature:26)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "BankStepDefinition.i_should_see_on_home_page()"
 });
 formatter.result({
-  "duration": 64774204,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "BankStepDefinition.i_create_new_customer()"
 });
-formatter.write("Customer details : bcd, abc@abc.com");
 formatter.result({
-  "duration": 5703181319,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "BankStepDefinition.i_should_get_customerID()"
 });
-formatter.write("Customer Id : 123456");
 formatter.result({
-  "duration": 329651,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "BankStepDefinition.i_logout()"
 });
 formatter.result({
-  "duration": 3262459830,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 1923635458,
+  "duration": 1646876237,
   "status": "passed"
 });
 });
