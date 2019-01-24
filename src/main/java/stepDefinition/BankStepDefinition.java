@@ -42,7 +42,7 @@ public class BankStepDefinition {
 
 	@Given("^url is loaded$")
 	public void url_is_loaded() throws Throwable {
-		driver = BrowserFactory.getDriver("CHROME");
+		driver = BrowserFactory.getDriver(PropertyReader.readConfig(ConfigurationProperties.BROWSER));
 		String url = PropertyReader.readConfig(ConfigurationProperties.BANK_URL);
 		driver.get(url);
 		loginPage = new LoginPage(driver);
