@@ -17,5 +17,5 @@ jobs:
     
     steps:
       - checkout
-      - run: mvn clean install
-      - run: mvn test
+      - run: mvn install
+      
