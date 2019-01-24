@@ -6,4 +6,4 @@
 .classpath
 
 test-output
-/target/
+target/
