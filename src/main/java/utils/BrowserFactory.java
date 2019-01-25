@@ -16,6 +16,7 @@ public class BrowserFactory {
 		DesiredCapabilities capability = new DesiredCapabilities();
 		if ("IE".equalsIgnoreCase(browser)) {
 			String iePath = PropertyReader.readConfig(ConfigurationProperties.IE_EXE_PATH);
+			iePath = System.getProperty("user.dir") + iePath;
 			System.setProperty("webdriver.ie.driver", iePath);
 			capability = DesiredCapabilities.internetExplorer();
 			capability.setCapability("enablePersistentHover", false);
@@ -34,6 +35,7 @@ public class BrowserFactory {
 			driver = new FirefoxDriver(capability);
 		} else if ("CHROME".equalsIgnoreCase(browser)) {
 			String chromePath = PropertyReader.readConfig(ConfigurationProperties.CHROME_EXE_PATH);
+			chromePath = System.getProperty("user.dir") + chromePath;
 			System.setProperty("webdriver.chrome.driver", chromePath);
 			
 			ChromeOptions options = new ChromeOptions();

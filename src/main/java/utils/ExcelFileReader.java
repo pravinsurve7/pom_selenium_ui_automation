@@ -17,6 +17,7 @@ public class ExcelFileReader {
 
 	public static Map<String, String> readDataForAutomationID(String sheetName,String automationID) throws IOException{		
 		String excelFilePath = PropertyReader.readConfig(ConfigurationProperties.DATA_SHEET);
+		excelFilePath = System.getProperty("user.dir") + excelFilePath;
 		FileInputStream inputStream = new FileInputStream(excelFilePath);
 		Map<String, String> hashmapObject = new HashMap<String,String>();
 
