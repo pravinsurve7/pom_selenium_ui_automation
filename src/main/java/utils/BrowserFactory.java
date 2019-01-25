@@ -1,5 +1,8 @@
 package utils;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -7,11 +10,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BrowserFactory {
-	
+
 	static WebDriver driver ;
-	
+
 	public static WebDriver getDriver(String browser) {
 		DesiredCapabilities capability = new DesiredCapabilities();
 		if ("IE".equalsIgnoreCase(browser)) {
@@ -28,7 +32,6 @@ public class BrowserFactory {
 			capability.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
 			capability.setCapability("ie.ensureCleanSession", true);
 			capability.setJavascriptEnabled(true);
-			//Runtime.getRuntime().exec("wscript "+absolutePath+"/gridConfig/protectedmodeon.vbs");
 			driver = new InternetExplorerDriver(capability);
 		} else if ("FIREFOX".equalsIgnoreCase(browser)) {
 			capability = DesiredCapabilities.firefox();
@@ -37,7 +40,7 @@ public class BrowserFactory {
 			String chromePath = PropertyReader.readConfig(ConfigurationProperties.CHROME_EXE_PATH);
 			chromePath = System.getProperty("user.dir") + chromePath;
 			System.setProperty("webdriver.chrome.driver", chromePath);
-			
+
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--ignore-certificate-errors");
 			options.addArguments("--disable-bundled-ppapi-flash");
@@ -50,13 +53,44 @@ public class BrowserFactory {
 			options.addArguments("--disable-extensions");
 			options.addArguments("start-maximized");
 			options.addArguments("disable-infobars");
-			
+
 			capability = DesiredCapabilities.chrome();
 			capability.setJavascriptEnabled(true);
 			capability.setCapability(ChromeOptions.CAPABILITY, options);
 			capability.setCapability(CapabilityType.TAKES_SCREENSHOT, true);
-			
+
 			driver = new ChromeDriver(capability);
+
+		} else if ("CHROME_LINUX".equalsIgnoreCase(browser)) {
+			String chromePath = PropertyReader.readConfig(ConfigurationProperties.CHROME_LINUX_EXE_PATH);
+			chromePath = System.getProperty("user.dir") + chromePath;
+			System.setProperty("webdriver.chrome.driver", chromePath);
+
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--ignore-certificate-errors");
+			options.addArguments("--disable-bundled-ppapi-flash");
+			options.addArguments("--disable-extensions");
+			options.addArguments("--disable-web-security");
+			options.addArguments("--always-authorize-plugins");
+			options.addArguments("--allow-running-insecure-content");
+			options.addArguments("--test-type");
+			options.addArguments("--enable-npapi");
+			options.addArguments("--disable-extensions");
+			options.addArguments("start-maximized");
+			options.addArguments("disable-infobars");
+
+			capability = DesiredCapabilities.chrome();
+			capability.setJavascriptEnabled(true);
+			capability.setCapability(ChromeOptions.CAPABILITY, options);
+			capability.setCapability(CapabilityType.TAKES_SCREENSHOT, true);
+
+			try {
+				URL serverurl = new URL("http://localhost:9515");
+				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+				driver = new RemoteWebDriver(serverurl,capabilities);
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			}
 		}
 		return driver;
 	}
