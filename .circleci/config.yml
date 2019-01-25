@@ -18,6 +18,7 @@ jobs:
     steps:
       - checkout
       - run: mkdir test-reports
+      - run: chmod 777 ./Libs/chromedriverlinux
       - run: ./Libs/chromedriverlinux
       - run:
           name: Download Selenium
