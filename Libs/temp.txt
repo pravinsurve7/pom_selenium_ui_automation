@@ -56,3 +56,7 @@ java -jar autonomous.driving.simulator.test-0.0.1.jar
 
 
 111111111111111111111
+https://here.hirevue.com/equipmenttest/Eavmpj4-e9yced/candidate/
+https://here.hirevue.com/interviews/Eavmpj4-e9yced/candidate/
+https://eu.hirevue.com/interview-status/#/Eavmpj4-e9yced/
+
