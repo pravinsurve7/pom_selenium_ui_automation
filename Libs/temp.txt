@@ -56,7 +56,15 @@ java -jar autonomous.driving.simulator.test-0.0.1.jar
 
 
 111111111111111111111
-https://here.hirevue.com/equipmenttest/Eavmpj4-e9yced/candidate/
-https://here.hirevue.com/interviews/Eavmpj4-e9yced/candidate/
-https://eu.hirevue.com/interview-status/#/Eavmpj4-e9yced/
-https://here.webex.com/here/j.php?MTID=mf9af5985841c2ed1b65b511015d4dd6d
+
+Pravin Surve - SDET Interview - DreamPay
+When
+Tue May 12, 2020 10am – 11am India Standard Time - Kolkata
+Joining info
+Join with Google Meet
+meet.google.com/zth-mvqv-ycb
+
+
+Here
+https://here.hirevue.com/interviews/Ehrq3w5-6ii4fp/candidate/
+
