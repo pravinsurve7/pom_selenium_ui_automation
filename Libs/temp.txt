@@ -57,12 +57,13 @@ java -jar autonomous.driving.simulator.test-0.0.1.jar
 
 111111111111111111111
 
+You have been invited to the following event.
 Pravin Surve - SDET Interview - DreamPay
 When
-Tue May 12, 2020 10am – 11am India Standard Time - Kolkata
+Tue May 12, 2020 5pm – 6pm India Standard Time - Kolkata
 Joining info
 Join with Google Meet
-meet.google.com/zth-mvqv-ycb
+meet.google.com/mcz-pezb-fre
 
 
 Here
